@@ -36,7 +36,7 @@ header h1 {
     padding: 4px;
     background-color: #185592;
     color: #d5dcdc;
-    border: 5px solid #000000;
+    border: 5px solid #050077;
 }
 
 header a {
@@ -70,6 +70,7 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+/* hero start */
 .hero {
     background-image: url(../images/background.jpg);
     background-size: cover;
@@ -89,15 +90,71 @@ header nav ul li a:hover {
     display: flex;
     justify-content: end;
     text-align: right;
-    font-size: 45px;
+    font-size: 48px;
     
 }    
 
 #author {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     text-align: right;
     text-decoration: underline;
     font-size: 35px;
     margin-top: 15px;
+}
+/* hero end */
+
+/* title style class  */
+.title {
+    border-right: 6px solid black;
+    min-height: 100%;
+    text-align: right;
+    padding-right: 40px;
+    min-width: 20%;
+    max-width: 20%;
+}
+.title h2 {
+    font-size: 42px;
+}
+
+/* about me styling */
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 30px 0;
+    background: -moz-linear-gradient(top, #2F454F 0%, #0D1316 100%);
+    background: -webkit-linear-gradient(top, #2F454F 0%, #0D1316 100%);
+    background: linear-gradient(to bottom, #2F454F 0%, #0D1316 100%);
+}
+
+.about-me p {
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 1.3;
+    width: 90%;
+}
+
+/* my work styling */
+.my-work {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    background: -moz-linear-gradient(top, #0E0D16 0%, #342F4F 100%);
+    background: -webkit-linear-gradient(top, #0E0D16 0%, #342F4F 100%);
+    background: linear-gradient(to bottom, #0E0D16 0%, #342F4F 100%);
+}
+
+.grid-position {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 500px;
+}
+
+.grid {
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
