@@ -3,7 +3,10 @@
     --primary-color: #010108;
     --secondary-color: #1f212d;
     --white: #fff;
-    --other-color1: #54fb91;
+    --other-color1: #992255;
+    --other-color2: #d5cbc6;
+    --other-color3: #54fb91;
+
 }
 
 /* remove default styles */
@@ -21,15 +24,26 @@ body {
 
 /* header start */
 header {
+    padding: 15px;
     display: flex;
     flex-wrap: wrap;
     top: 0;
+    background-color: #d5dcdc;
+    justify-content: space-between;
+}
+
+header h1 {
+    padding: 4px;
+    background-color: #185592;
+    color: #d5dcdc;
+    border: 5px solid #000000;
 }
 
 header a {
     text-decoration: none;
     color: var(--other-color1);
 }
+
 
 header nav {
     margin: 7px 0;
@@ -38,7 +52,52 @@ header nav {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     list-style: none;
     align-items: center;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 28px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background:  var(--secondary-color);
+    color: var(--other-color3);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.hero {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero img {
+    padding-bottom: 40px;
+}
+
+
+.hero .quote {
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    font-size: 45px;
+    
+}    
+
+#author {
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    text-decoration: underline;
+    font-size: 35px;
+    margin-top: 15px;
 }
