@@ -1,13 +1,15 @@
-:root {
-    --text-color: #15009e;
-    --primary-color: #010108;
-    --secondary-color: #1f212d;
-    --white: #fff;
-    --other-color1: #992255;
-    --other-color2: #d5cbc6;
-    --other-color3: #54fb91;
+/*  */
+/* :root {
+    --text-color: #15009e;                  |
+    --primary-color: #010108;               |
+    --secondary-color: #1f212d;             |
+    --white: #fff;                          |       colors used
+    --other-color1: #992255;                |       will replace as variables later
+    --other-color2: #d5cbc6;                |
+    --other-color3: #54fb91;                |
+    --other-color4: #d5dcdc;                |
 
-}
+} */
 
 /* remove default styles */
 * {
@@ -18,8 +20,8 @@
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: var(--secondary-color);
-    color: var(--white);
+    background-color: #1f212d;
+    color: #fff;
 }
 
 /* header start */
@@ -41,7 +43,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: var(--other-color1);
+    color: #992255;
 }
 
 
@@ -64,8 +66,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background:  var(--secondary-color);
-    color: var(--other-color3);
+    background:  #1f212d;
+    color: #54fb91;
     border-radius: 15px;
     text-shadow: none;
 }
@@ -149,7 +151,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     width: 80%;
-    height: 500px;
+    height: 750px;
 }
 
 .grid {
@@ -157,4 +159,50 @@ header nav ul li a:hover {
     width: 70%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
+}
+
+.project {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: solid #81917e;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    margin: 5px;
+}
+
+.project:hover {
+    opacity: 1.0;
+}
+
+.run-buddy {
+    grid-column: 1/3;
+    grid-row: span 2;
+    background-image: url("../images/runbuddy.jpg");
+    background-position: 25% 95%;
+}
+
+.horiseon {
+    background-image: url("../images/horiseon(1).png");
+    background-position: 50% 5%;
+}
+
+.robot-gladiators {
+    background-image: url("../images/roboglad.jpg");
+}
+
+.project4 {
+    background-image: url("../images/placeholder4.jpg");
+}
+
+.project5 {
+    background-image: url("../images/placeholder5.jpg");
+}
+
+.label {
+    background-color: #7b7e7e;
+    color: #791f46;
+    padding: 7px;
 }
